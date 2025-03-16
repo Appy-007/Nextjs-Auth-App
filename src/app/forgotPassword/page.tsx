@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import axios from "axios"
@@ -14,12 +15,12 @@ function ForgotPassword(){
       try {
         setIsloading(true)
         const response=await axios.post('/api/users/forgotPassword',forgotPasswordform)
-        console.log(response)
+        
         toast.success('Email Sent successfully .Check your email..')
 
         
       } catch (error:any) {
-        console.log(error)
+        
         toast.error(error.response.data.error)
         
       }

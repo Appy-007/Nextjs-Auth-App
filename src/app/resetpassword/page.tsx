@@ -16,9 +16,9 @@ function Resetpassword(){
 
     useEffect(()=>{
       const urlToken=window.location.search.split('=')[1]
-      console.log(urlToken)
+      
       setResetpassworddata({...resetpassworddata,token:urlToken || ''})
-      console.log(resetpassworddata.token)
+      
     },[])
    
 
@@ -26,14 +26,14 @@ function Resetpassword(){
       e.preventDefault()
       try {
         setIsloading(true)
-        console.log('token',resetpassworddata.token)
+        
         const response=await axios.post('/api/users/resetPassword',resetpassworddata)
         console.log(response)
         toast.success('Password reset successfully')
         router.push('/login')
         
       } catch (error:any) {
-        console.log(error)
+        
         toast.error(error)
         
       }

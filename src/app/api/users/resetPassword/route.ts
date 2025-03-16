@@ -21,7 +21,7 @@ export async function POST(request:NextRequest){
         if(!user){
             return NextResponse.json({error: 'No such user exists... check your token '},{status:400})
         }
-        console.log(user)
+        
         const salt=await bcryptjs.genSalt(10)
         const hashedpassword=await bcryptjs.hash(password,salt)
 
