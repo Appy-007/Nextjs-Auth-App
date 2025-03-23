@@ -23,10 +23,8 @@ function SignupPage() {
       setIsloading(true)
       const response=await axios.post('/api/users/signup',signupform)
       console.log(response)
+      toast.success('Signed up successfully...Check your email for furthur verification')
       router.push('/login')
-      
-
-      
     } catch (error:any) {
       
       toast.error(error.response.data.error)

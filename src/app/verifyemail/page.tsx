@@ -44,8 +44,8 @@ function VerifyemailPage(){
             <h1 className="text-bold font-sm md:font-semibold">Verify your token</h1>
             <h2>{token ? `${token}` : ''}</h2>
             {isverified && (<div className="flex flex-col gap-4 items-center justify-center">
-                <h2>Verified successfully</h2>
-                <Link href='/login'>Login</Link>
+                <h2 className="font-bold text-green-600 bg-amber-300">Verified successfully !</h2>
+                <Link href='/login' className="bg-blue-700 rounded-md py-2 px-4 text-white">Login</Link>
 
             </div>)}
             
