@@ -1,5 +1,5 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-Deploted link-https://nextjs-auth-app-git-main-apratim-rahas-projects.vercel.app/login
+-Deployed link-https://nextjs-auth-app-git-main-apratim-rahas-projects.vercel.app/login
 
 ## Getting Started
 
